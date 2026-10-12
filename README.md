@@ -21,7 +21,7 @@
 
 B.Tech CSE student at **NMAMIT** (class of 2027, **CGPA 8.89**) who ships real software for real users. I work across the backend and infrastructure stack: API design, relational schemas, queues, locking and concurrency, CI/CD, and the deployment pipelines that keep it all running.
 
-- 🏨 **Lead engineer** at Inspirante Technologies, wrote ~90% of a platform that runs hostel operations for 2,000+ students
+- 🏨 **Software Engineer Intern** at Inspirante Technologies, wrote ~90% of a platform that runs hostel operations for 2,000+ students
 - ⚡ **Solo-shipped** a full D2C commerce platform on Cloudflare's edge in four weeks
 - 🏆 **Tech lead** for a national 36-hour hackathon: 3,000 registrations, zero downtime on a single VPS
 - 🧑‍🏫 **Technical Manager** of Finite Loop Club: choose the stack, review every PR, onboard new members
