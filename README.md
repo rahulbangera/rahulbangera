@@ -55,31 +55,6 @@ B.Tech CSE student at **NMAMIT** (class of 2027, **CGPA 8.89**) who ships real s
 
 Replaced paper-driven attendance, leave, maintenance and room allocation across **4 hostels, 11 blocks and 20 staff**. I wrote roughly 90% of it: the API, the schema, and all **7 client apps**, including native apps on the Play Store and App Store.
 
-<details>
-<summary><b>🔬 Gate-attendance pipeline: the interesting part</b></summary>
-
-<br/>
-
-```
- Scanner ──► Webhook ──► ACK immediately ──► BullMQ ──► Workers (parallel)
-                                                          │
-                                       per-student Postgres advisory lock
-                                       (no duplicate punches across workers)
-                                                          │
-                                                          ▼
-                              Redis 30-min debounce ──► recompute attendance
-                                                          │
-                                                          ▼
-                                       notify block staff on late offline replays
-```
-
-- Webhook **acknowledges before queueing**, so scanners never time out
-- **Advisory locks** stop duplicate punches when workers race
-- **Debounced recompute** handles offline scanners replaying punches late
-- Also built: spreadsheet bulk import that infers columns, normalises values and previews conflicts before commit; the RBAC layer; and the API test suite that gates every production deploy
-
-</details>
-
 ### 👖 denimcode — D2C commerce platform
 [`thedenimcode.com`](https://thedenimcode.com) · *Sole author · Jul – Aug 2026*
 
@@ -157,7 +132,7 @@ Member ─► Technical Head ─► Vice President (Tech) ─► Technical Manag
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=rahulbangera&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats" />
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=rahulbangera&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub stats" />
 <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahulbangera&theme=tokyonight&hide_border=true&layout=compact&langs_count=8" alt="Top languages" />
 
 <img src="https://streak-stats.demolab.com?user=rahulbangera&theme=tokyonight&hide_border=true" alt="GitHub streak" />
